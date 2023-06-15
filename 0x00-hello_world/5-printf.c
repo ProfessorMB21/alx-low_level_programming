@@ -8,7 +8,9 @@
 
 int main(void)
 {
-	printf("%s, %s,\n", "with proper grammar", "but the outcome"
-		       	" is a piece of art");
+	char f[] = "with proper grammar";
+	char l[] = "but the outcome is a piece of art";
+
+	printf("%s, %s,\n", &f, &l);
 	return (0);
 }
