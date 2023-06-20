@@ -10,7 +10,6 @@
 void print_alphabet(void)
 {
 	/* declarations */
-	char c;
 	int i;
 
 	for (i = 'a'; i <= 'z'; i++)
