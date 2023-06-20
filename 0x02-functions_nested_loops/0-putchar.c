@@ -1,5 +1,5 @@
 /* Preprocessors */
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints the string '_putchar' to the terminal
@@ -9,6 +9,14 @@
 
 int main(void)
 {
-	printf("%s\n", "_putchar");
+	/* declarations */
+	char string[] = "_putchar";
+	int i;
+
+	for (i = 0; i < sizeof(string) - 1; i++)
+	{
+		_putchar(string[i]);
+	}
+	_putchar('\n');
 	return (0);
 }
