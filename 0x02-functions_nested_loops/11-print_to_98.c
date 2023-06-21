@@ -22,8 +22,8 @@ void print_to_98(int n)
 		}
 		for (j = 0; j <= lastDigit; j++)
 		{
-			_putchar(48 + i);
-			_putchar(48 + j);
+			_putchar(i + '0');
+			_putchar(j + '0');
 			if (j == lastDigit && i == 9)
 			{
 				continue;
