@@ -17,9 +17,9 @@ void times_table(void)
 		for (m = 0; m < 10; m++)
 		{
 			prod = m * n;
-			_putchar(prod + '0');
-			_putchar(prod / 10 + '0');
-			if (n == 9)
+			_putchar(48 + (prod / 10));
+			_putchar(48 + (prod % 10));
+			if (m == 9)
 			{
 				continue;	/* prevent trailing spaces */
 			} else
