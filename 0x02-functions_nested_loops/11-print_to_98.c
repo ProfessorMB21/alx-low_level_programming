@@ -1,5 +1,5 @@
 /* Preprocessors */
-#include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - Prints all natural numbers from n to 98
@@ -11,27 +11,14 @@
 void print_to_98(int n)
 {
 	/* declarations */
-	int i, j;
-	int lastDigit = 9;
+	int i;
 
-	for (i = n; i <= 9; i++)
+	for (i = n; i <= 98; i++)
 	{
-		if (i == 9)
+		if (i == 98)
 		{
-			lastDigit = 8;
+			printf("%d", i);
 		}
-		for (j = 0; j <= lastDigit; j++)
-		{
-			_putchar(i + '0');
-			_putchar(j + '0');
-			if (j == lastDigit && i == 9)
-			{
-				continue;
-			} else
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-		}
+		printf("%d, ", i);
 	}
 }
