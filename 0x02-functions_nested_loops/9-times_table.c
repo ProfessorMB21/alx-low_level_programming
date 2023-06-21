@@ -18,6 +18,7 @@ void times_table(void)
 		{
 			prod = m * n;
 			_putchar(prod + '0');
+			_putchar(prod / 10 + '0');
 			if (n == 9)
 			{
 				continue;	/* prevent trailing spaces */
@@ -26,7 +27,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar('\t');
 			}
-			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
