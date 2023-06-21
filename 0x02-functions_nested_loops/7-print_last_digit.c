@@ -5,14 +5,18 @@
  * print_last_digit - Prints the last digit of a number
  * @i: int
  *
- * Return: r (success)
+ * Return: remainder (success)
  */
 
 int print_last_digit(int i)
 {
 	/* declarations */
-	int r = i % 10;
+	int remainder = i % 10;
 
-	_putchar(r);
-	return (r);
+	if (i < 0)
+	{
+		remainder = remainder * -1;
+	}
+	_putchar(remainder + '0');
+	return (remainder);
 }
