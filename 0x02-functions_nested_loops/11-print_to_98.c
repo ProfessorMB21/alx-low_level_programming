@@ -28,7 +28,7 @@ void print_to_98(int n)
 		}
 	} else
 	{
-		for (i = n; i <= lastDigit; i--)
+		for (i = n; i >= lastDigit; i--)
 		{
 			if (i == lastDigit)
 			{
