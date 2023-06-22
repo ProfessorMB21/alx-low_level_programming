@@ -22,7 +22,7 @@ void times_table(void)
 
 			if (i == 9 && j == 9)
 			{
-				if (prod > 10)
+				if (prod >= 10)
 				{
 					_putchar(quotient + '0');
 					_putchar(remainder + '0');
@@ -30,7 +30,7 @@ void times_table(void)
 				{
 					_putchar(remainder + '0');
 				}
-			} else if (prod > 10)
+			} else if (prod >= 10)
 			{
 				_putchar(quotient + '0');
 				_putchar(remainder + '0');
