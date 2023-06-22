@@ -12,15 +12,31 @@ void print_to_98(int n)
 {
 	/* declarations */
 	int i;
+	int lastDigit = 98;
 
-	for (i = n; i <= 98; i++)
+	if (n <= lastDigit)
 	{
-		if (i == 98)
+		for (i = n; i <= lastDigit; i++)
 		{
-			printf("%d", i);
-		} else
+			if (i == lastDigit)
+			{
+				printf("%d", i);
+			} else
+			{
+				printf("%d, ", i);
+			}
+		}
+	} else
+	{
+		for (i = n; i <= lastDigit; i--)
 		{
-			printf("%d, ", i);
+			if (i == lastDigit)
+			{
+				printf("%d", i);
+			} else
+			{
+				printf("%d, ", i);
+			}
 		}
 	}
 	putchar('\n');
