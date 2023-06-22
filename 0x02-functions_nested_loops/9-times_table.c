@@ -10,20 +10,28 @@
 void times_table(void)
 {
 	/* declarations */
-	int n, m, prod;
+	int i, j, prod, remainder, quotient;
 
-	for (n = 0; n < 10; n++)
+	for (i = 0; i < 10; i++)
 	{
-		for (m = 0; m < 10; m++)
+		for (j = 0; j < 10;j++)
 		{
-			prod = m * n;
-			_putchar((prod / 10) + '0');
-			_putchar((prod % 10) + '0');
-			if (m == 9)
+			prod = i * j;
+			remainder = prod % 10;
+			quotient = prod / 10;
+
+			if (i == 0)
 			{
-				continue;	/* prevent trailing spaces */
+				_putchar('0');
+			} else if (prod > 10)
+			{
+				_putchar(quotient + '0');
+				_putchar(remainder + '0');
+				_putchar(',');
+				_putchar(' ');
 			} else
 			{
+				_putchar(remainder + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
