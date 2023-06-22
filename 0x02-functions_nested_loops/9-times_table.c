@@ -20,7 +20,7 @@ void times_table(void)
 			remainder = prod % 10;
 			quotient = prod / 10;
 
-			if (i == 9 && j == 9)
+			if (j == 9)
 			{
 				if (prod >= 10)
 				{
