@@ -14,13 +14,28 @@ void times_table(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		for (j = 0; j < 10;j++)
+		for (j = 0; j < 10; j++)
 		{
 			prod = i * j;
 			remainder = prod % 10;
 			quotient = prod / 10;
 
-			if (prod > 10)
+			if (i == 9 && j == 9)
+			{
+				if (prod > 10)
+				{
+					_putchar(quotient + '0');
+					_putchar(remainder + '0');
+					_putchar(',');
+					_putchar(' ');
+				} else
+				{
+					_putchar(remainder + '0');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
+			} else if (prod > 10)
 			{
 				_putchar(quotient + '0');
 				_putchar(remainder + '0');
