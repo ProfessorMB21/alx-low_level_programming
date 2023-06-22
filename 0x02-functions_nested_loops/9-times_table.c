@@ -19,7 +19,6 @@ void times_table(void)
 			prod = i * j;
 			remainder = prod % 10;
 			quotient = prod / 10;
-
 			if (j == 9)
 			{
 				if (prod >= 10)
@@ -40,7 +39,7 @@ void times_table(void)
 			{
 				_putchar(remainder + '0');
 				_putchar(',');
-				_putchar(' ');
+				_putchar('\t');
 				_putchar(' ');
 			}
 		}
