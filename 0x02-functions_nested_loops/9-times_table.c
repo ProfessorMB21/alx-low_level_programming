@@ -39,7 +39,7 @@ void times_table(void)
 			{
 				_putchar(remainder + '0');
 				_putchar(',');
-				_putchar('\t');
+				_putchar(' ');
 				_putchar(' ');
 			}
 		}
