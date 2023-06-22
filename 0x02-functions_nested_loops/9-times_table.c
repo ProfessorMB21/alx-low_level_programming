@@ -20,21 +20,11 @@ void times_table(void)
 			remainder = prod % 10;
 			quotient = prod / 10;
 
-			if (i == 9 && j == 9)
+			if (i == 0)
 			{
-				if (prod > 10)
-				{
-					_putchar(quotient + '0');
-					_putchar(remainder + '0');
-					_putchar(',');
-					_putchar(' ');
-				} else
-				{
-					_putchar(remainder + '0');
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
+				_putchar('0');
+				_putchar(',');
+				_putchar(' ');
 			} else if (prod > 10)
 			{
 				_putchar(quotient + '0');
