@@ -10,20 +10,24 @@
 void more_numbers(void)
 {
 	/* declarations */
-	int i, j;
+	int i, j, total_lines;
 	int limit = 9;
 
-	for (i = 0; i < 2; i++)
+	while (total_lines < 10)
 	{
-		if (i == 1)
+		for (i = 0; i < 2; i++)
 		{
-			limit = 4;
-		}
-		for (j = 0; j <= limit; j++)
-		{
-			_putchar(i + '0');
-			_putchar(j + '0');
-		}
+			if (i == 1)
+			{
+				limit = 4;
+			}
+			for (j = 0; j <= limit; j++)
+			{
+				_putchar(i + '0');
+				_putchar(j + '0');
+			}
+		}	
+		_putchar('\n');
+		total_lines++;
 	}
-	_putchar('\n');
-}
+}	
