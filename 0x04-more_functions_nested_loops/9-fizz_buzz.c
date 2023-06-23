@@ -13,20 +13,26 @@ int main(void)
 	/* declarations */
 	int i;
 
-	for (i = 0; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("%s", "FizzBuzz");
+			printf("%s ", "FizzBuzz");
 		} else if (i % 3 == 0)
 		{
-			printf("%s", "Fizz");
+			printf("%s ", "Fizz");
 		} else if (i % 5 == 0)
 		{
-			printf("%s", "Buzz");
+			if (i == 100)
+			{
+				printf("Buzz");
+			} else
+			{
+				printf("%s ", "Buzz");
+			}
 		} else
 		{
-			printf("%d", i);
+			printf("%d ", i);
 		}
 	}
 	putchar('\n');
