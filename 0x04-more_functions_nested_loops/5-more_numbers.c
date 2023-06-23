@@ -23,7 +23,10 @@ void more_numbers(void)
 			}
 			for (j = 0; j <= limit; j++)
 			{
-				_putchar(i + '0');
+				if (limit == 4)
+				{
+					_putchar('1');
+				}
 				_putchar(j + '0');
 			}
 		}	
