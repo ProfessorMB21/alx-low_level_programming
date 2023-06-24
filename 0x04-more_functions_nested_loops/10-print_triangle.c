@@ -11,18 +11,21 @@
 void print_triangle(int size)
 {
 	/* declarations */
-	int i, j, grid;
+	int i, j, q;
 
-	grid = -size;
 	if (size > 0)
 	{
-		for (i = 0; i > grid; i--)
+		for (q = 0; q < size; q++)
 		{
-			for (j = 0; j > i; j--)
+			for (i = size - 1; i > q; i--) /* Prints whitespace */
 			{
-				putchar('#');
+				_putchar(' ');
 			}
-			_putchar(
+			for (j = 0; j < q + 1; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
 	} else
 	{
