@@ -20,6 +20,12 @@ void print_rev(char *s)
 	_putchar('\n');
 }
 
+/**
+ * _strlen - Returns the length of a string
+ * @s: ptr to string
+ * Return: length of string
+*/
+
 int _strlen(char *s)
 {
 	/* declarations */
