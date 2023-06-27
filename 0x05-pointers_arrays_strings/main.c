@@ -11,6 +11,6 @@ int main(void)
 	char *str;
 
 	str = "Hello world";
-	_puts(str);
+	print_rev(str);
 	return (0);
 }
