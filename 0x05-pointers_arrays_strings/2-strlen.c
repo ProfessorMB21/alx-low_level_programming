@@ -9,7 +9,7 @@ int _strlen(int *s)
 	/* declarations */
 	int len = 0;
 
-	while (i != '\0')
+	while (s[len] != '\0')
 	{
 		len++;
 	}
