@@ -4,17 +4,13 @@
  * Return: len
  */
 
-int _strlen(int *s)
+int _strlen(char *s)
 {
 	/* declarations */
 	int len = 0;
 	int i;
 
 	i = 0;
-	if (s[i] == '\0')
-	{
-		return (len);
-	}
 	while (s[i] != '\0')
 	{
 		i++;
