@@ -8,9 +8,8 @@
 
 int main(void)
 {
-	char *str;
+	int str[] = {30, 20, 43, 24, 564, 65, 23, 245, 675};
 
-	str = "Holberton!";
-	puts_half(str);
+	print_array(str, 5);
 	return (0);
 }
