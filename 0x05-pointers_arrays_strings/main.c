@@ -10,7 +10,7 @@ int main(void)
 {
 	char *str;
 
-	str = "Hello world";
-	print_rev(str);
+	str = "Holberton!";
+	puts2(str);
 	return (0);
 }
