@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check code
@@ -8,9 +9,12 @@
 
 int main(void)
 {
-	int str[1] = {98};
+	int len;
+	char *str, *str2;
 
-	print_array(str, 0);
-	print_array(str, -1);
+	str = "Holberton!";
+	str2 = "";
+	printf("The length of str is %d and the length of str2 is %d\n", _strlen(str), _strlen(str2));
+
 	return (0);
 }
