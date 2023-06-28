@@ -11,6 +11,6 @@ int main(void)
 	char *str;
 
 	str = "Holberton!";
-	puts2(str);
+	puts_half(str);
 	return (0);
 }
