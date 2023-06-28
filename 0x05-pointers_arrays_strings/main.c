@@ -8,8 +8,9 @@
 
 int main(void)
 {
-	int str[] = {30, 20, 43, 24, 564, 65, 23, 245, 675};
+	int str[1] = {98};
 
-	print_array(str, 5);
+	print_array(str, 0);
+	print_array(str, -1);
 	return (0);
 }
