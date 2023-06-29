@@ -9,10 +9,13 @@
 
 int main(void)
 {
-	char a[98];
+	char a[98] = "World\n";
+	char s[] = "Hello\n";
 	char b[] = "Hello World!\n";
 	
-	printf("%s\n", _strncpy(a, b, 5));
-	printf("%s", _strncpy(a, b, 90));
+	printf("%d\n", _strcmp(a, b));
+	printf("%d\n", _strcmp(a, a));
+	printf("%d\n", _strcmp(b, a));
+	printf("%d\n", _strcmp(s, b));
 	return (0);
 }
