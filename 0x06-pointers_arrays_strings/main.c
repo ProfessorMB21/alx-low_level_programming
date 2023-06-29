@@ -12,6 +12,7 @@ int main(void)
 	char a[98] = "Hello ";
 	char b[] = "World!\n";
 	
-	printf("%s", _strcat(a, b));
+	printf("%s", _strncat(a, b, 2));
+	printf("%s", _strncat(a, b, 1024));
 	return (0);
 }
