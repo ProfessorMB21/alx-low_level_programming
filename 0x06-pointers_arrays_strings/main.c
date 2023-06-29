@@ -9,10 +9,10 @@
 
 int main(void)
 {
-	char a[98] = "Hello ";
-	char b[] = "World!\n";
+	char a[98];
+	char b[] = "Hello World!\n";
 	
-	printf("%s", _strncat(a, b, 2));
-	printf("%s", _strncat(a, b, 1024));
+	printf("%s\n", _strncpy(a, b, 5));
+	printf("%s", _strncpy(a, b, 90));
 	return (0);
 }
