@@ -10,7 +10,7 @@
 int main(void)
 {
 	char a[] = "Hello world\n";
-	char str[] = "My goodness 13i was gonna ask you The same thing\n";
+	char str[] = "my goodness 13i was gonna ask you The same thing\n";
 
 	printf("The initial string was: %s\n", str);
 	printf("The string after modification: %s\n", cap_string(str));
