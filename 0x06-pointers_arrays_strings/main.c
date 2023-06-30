@@ -9,10 +9,9 @@
 
 int main(void)
 {
-	char *a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 29, 49, 59};
+	char a[] = "Hello world\n";
 
-	print_array(a, sizeof(a) / sizeof(int));
-	reverse_array(a, sizeof(a) / sizeof(int));
-	reverse_array(a, 5);
+	printf("The initial string was: %s\n", a);
+	printf("The string after modification: %s\n", string_toupper(a));
 	return (0);
 }
