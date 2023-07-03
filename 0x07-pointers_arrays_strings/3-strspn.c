@@ -23,6 +23,10 @@ unsigned int _strspn(char *s, char *accept)
 				count++;
 			}
 		}
+		if (count == 0)
+		{
+			return (count);
+		}
 	}
 	return (count);
 }
