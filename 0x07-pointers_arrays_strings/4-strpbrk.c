@@ -11,10 +11,11 @@
 char *_strpbrk(char *s, char *accept)
 {
 	/* declarations */
-	int i = 0;
+	int i;
 
 	while (*s != '\0')
 	{
+		i = 0;
 		while (accept[i] != '\0')
 		{
 			if (*s == accept[i])
