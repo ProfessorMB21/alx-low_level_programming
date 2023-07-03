@@ -12,7 +12,7 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	/* declarations */
-	int i;
+	unsigned int i;
 
 	for (i = 0; *(s + i) < n; i++)
 	{
