@@ -24,7 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-		if (count == 0)
+		if (s[i] == '\0')
 		{
 			return (count);
 		}
