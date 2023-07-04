@@ -14,10 +14,6 @@ char *_strstr(char *haystack, char *needle)
 	/* declarations */
 	char *needle_, *haystack_;
 
-	if (*needle == 0)
-	{
-		return (haystack);
-	}
 	while (*haystack != '\0')
 	{
 		/**
@@ -32,7 +28,7 @@ char *_strstr(char *haystack, char *needle)
 			haystack++;
 			needle_++;
 		}
-		if (!*needle_)
+		if (!*needle_ != '\0')
 		{
 			return (haystack_);
 		}
