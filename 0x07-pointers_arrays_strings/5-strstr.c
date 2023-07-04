@@ -14,6 +14,10 @@ char *_strstr(char *haystack, char *needle)
 	/* declarations */
 	char *needle_, *haystack_;
 
+	if (*needle == 0)
+	{
+		reurn (haystack);
+	}
 	while (*haystack != '\0')
 	{
 		/**
