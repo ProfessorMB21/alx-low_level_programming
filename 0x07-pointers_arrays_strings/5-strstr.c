@@ -16,14 +16,24 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack != '\0')
 	{
-		while (*needle != '\0' && *haystack == needle)
+		/**
+		 * using helping variables 
+		 * to assist returning one 
+		 * of the argument pointers
+		 */
+		haystack_ = haystack;
+		needle_ = needle;
+		while (*needle_ != '\0' && *haystack == *needle_)
 		{
-			needle++;
 			haystack++;
+			needle_++;
 		}
-		if (*needle == '\0')
-			return (haystack);
+		if (!*needle_)
+		{
+			return (haystack_);
+		}
 		haystack++;
+		
 	}
 	return (0);
 }
