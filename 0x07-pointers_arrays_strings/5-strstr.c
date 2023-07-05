@@ -23,14 +23,14 @@ char *_strstr(char *haystack, char *needle)
 		 */
 		haystack_ = haystack;
 		needle_ = needle;
-		while (*needle_ != '\0' && *haystack == *needle_)
+		while (*needle_ != '\0' && *haystack_ == *needle_)
 		{
-			haystack++;
+			haystack_++;
 			needle_++;
 		}
-		if (!*needle_ != '\0')
+		if (*needle_ == '\0')
 		{
-			return (haystack_);
+			return (haystack);
 		}
 		haystack++;
 		
