@@ -17,8 +17,8 @@ char *_strstr(char *haystack, char *needle)
 	while (*haystack != '\0')
 	{
 		/**
-		 * using helping variables 
-		 * to assist returning one 
+		 * using helping variables
+		 * to assist returning one
 		 * of the argument pointers
 		 */
 		haystack_ = haystack;
@@ -33,8 +33,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			return (haystack);
 		}
-		haystack++;
-		
+		haystack++;	
 	}
 	return (0);
 }
