@@ -34,10 +34,5 @@ int _square(int square, int i)
 
 int _sqrt_recursion(int n)
 {
-	/* declarations */
-	int i = 0;
-
-	if (n < 0)
-		return (-1);
 	return (_square(n, i));
 }
