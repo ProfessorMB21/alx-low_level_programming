@@ -3,6 +3,8 @@
 
 /**
  * main - Prints all arguments it receives to stdout
+ * @argc: Number of arguments passed
+ * @argv: ptr, array of arguments passed
  * Return: 0 (success)
  */
 

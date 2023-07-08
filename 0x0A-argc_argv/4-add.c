@@ -17,6 +17,9 @@ int isNum(char *s)
 	{
 		if (*(s + i) >= '0' && *(s + i) <= '9')
 		{
+			i++;
+		} else
+		{
 			return (0);
 		}
 	}
@@ -26,6 +29,8 @@ int isNum(char *s)
 
 /**
  * main - Adds positive numbers
+ * @argc: Number of arguments passed
+ * @argv: ptr, Array of arguments
  * Return: 0 (success), otherwise 'Error' and returns 1
  */
 

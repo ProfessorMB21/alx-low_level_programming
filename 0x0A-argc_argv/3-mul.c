@@ -4,6 +4,8 @@
 
 /**
  * main - Multiplies two numbers followed by a newline
+ * @argc: Number of arguments passed
+ * @argv: ptr, Array of arguments
  * Return: 0 (success), otherwise print 'Error' and return 1
  */
 
@@ -16,13 +18,11 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		return (1);
-	} else
-	{
-		for (i = 1; i < argc; i++)
-		{
-			count *= atoi(argv[i]);
-		}
-		printf("%d\n", count);
 	}
+	for (i = 1; i < argc; i++)
+	{
+		count *= atoi(argv[i]);
+	}
+	printf("%d\n", count);
 	return (0);
 }
