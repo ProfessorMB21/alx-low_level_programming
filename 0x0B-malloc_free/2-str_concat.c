@@ -12,7 +12,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	/* declarations */
-	int len1 = 0, len2 = 0, i, j;
+	int len1 = 0, len2 = 0, i, j, total_size;
 	char *str;
 
 	/* get string lengths */
