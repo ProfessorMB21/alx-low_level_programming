@@ -15,6 +15,12 @@ char *str_concat(char *s1, char *s2)
 	int len1 = 0, len2 = 0, i, j, total_size;
 	char *str;
 
+	/* let s1 and s2 be empty strings if their value is NULL */
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
 	/* get string lengths */
 	for (i = 0; s1[i] != '\0'; i++)
 		len1++;
