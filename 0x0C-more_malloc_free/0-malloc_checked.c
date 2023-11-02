@@ -11,7 +11,7 @@ void *malloc_checked(unsigned int b)
 	void *alloc_mem;
 	
 	alloc_mem = malloc(b);
-	if (b <= 0 || alloc_mem == NULL)
+	if (alloc_mem == NULL)
 	{
 		exit(98);
 	}
