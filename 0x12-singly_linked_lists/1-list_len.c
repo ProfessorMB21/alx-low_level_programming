@@ -10,7 +10,7 @@
 */
 size_t list_len(const list_t *h)
 {
-	list_t *current_node = h;
+	const list_t *current_node = h;
 	size_t list_count;
 
 	list_count = 0;
