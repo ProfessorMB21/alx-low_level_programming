@@ -3,7 +3,7 @@
 /**
 * sum_listint - Sums all the data (n) of a listint_t linked list
 *
-* @head: pointer to first 
+* @head: pointer to first
 *
 * Return: sum, otherwise 0 (if list is empty)
 */
