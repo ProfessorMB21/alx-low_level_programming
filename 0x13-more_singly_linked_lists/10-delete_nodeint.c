@@ -25,7 +25,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	while (curr != NULL)
 	{
-		if ((idx + 1) = index)
+		if (index = (idx + 1))
 		{
 			/**
 			* we point the current node at (index - 1)

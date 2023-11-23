@@ -22,10 +22,17 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	node = malloc(sizeof(listint_t));
 	curr = *head;
+	
+	if (idx == 0) /** if the index of the new node is 0 (beginning)*/
+	{
+		node->next = *head;
+		*head = node;
+		return (node);
+	}
 
 	while (curr != NULL)
 	{
-		if ((index + 1) == idx)	/** node at index (idx - 1) */
+		if (idx == (index + 1))	/** node at index (idx - 1) */
 		{
 			temp = curr->next;
 			node->next = temp; /**new node points to next node in list*/

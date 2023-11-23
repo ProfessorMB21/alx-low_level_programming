@@ -3,6 +3,7 @@
 /**
 * get_nodeint_at_index - Returns the nth node of a listint_t linked list
 *
+* @head: pointer to first node in the linked list
 * @index: the index of the node
 *
 * Return: the nth node, otherwise NULL (if node does not exist)
