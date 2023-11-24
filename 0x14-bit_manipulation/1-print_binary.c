@@ -15,5 +15,5 @@ void print_binary(unsigned long int n)
 		/**recursively find the binary of number by right shifting bits by 1*/
 		print_binary(number >> 1);
 
-//	_putchar((number & 1) + '0');
+	_putchar((number & 1) + '0');
 }
