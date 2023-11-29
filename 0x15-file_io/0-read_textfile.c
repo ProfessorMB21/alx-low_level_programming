@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (wcount == -1 || rcheck != wcount)
 		return (0);
 
-	free(buffer); /** clean up */	
+	free(buffer); /** clean up */
 	close(f); /** close the file */
 
 	return (wcount);
