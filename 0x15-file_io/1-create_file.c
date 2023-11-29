@@ -6,7 +6,7 @@
 * @filename: name of the text file
 * @text_content: text to write to the text file
 *
-* NOTE: The created file must has the permissions: rw-------.
+* NOTE: The created file must has the permissions: rw-------
 * If the file already exists, does not change the permissions.
 * If the file already exists, it is truncated
 *
