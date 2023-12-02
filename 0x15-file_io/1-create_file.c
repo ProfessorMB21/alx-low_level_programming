@@ -29,12 +29,12 @@ int create_file(const char *filename, char *text_content)
 		while (text_content[wcount] != '\0')
 			wcount++;
 
-		wcheck = write(filename, text_content, wcount);
+		wcheck = write(f, text_content, wcount);
 		/** check if write was a success */
 		if (wcheck == -1)
 			return (-1);
 	}
 
-	close(filename);	/** close file */
+	close(f);	/** close file */
 	return (1);
 }
