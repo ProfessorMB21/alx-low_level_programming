@@ -1,6 +1,29 @@
 #include "lists.h"
 
 /**
+* create_dnodeint - Create a new dlistint_t node
+*
+* @n: integer
+*
+* Return: address of new node, otherwise NULL
+*/
+dlistint_t *create_dnodeint(const int n)
+{
+	dlistint_t *new_node;
+
+	new_node = malloc(sizeof(dlistint_t));
+	if (new_node == NULL)
+		return (NULL);
+
+	new_node->n = n;
+	new_node->prev = NULL;
+	new_node->next = NULL;
+
+	return (new_node);
+}
+
+
+/**
 * add_dnodeint_end - Adds a new node at the end of a dlistint_t list
 *
 * @head: pointer to start of list
