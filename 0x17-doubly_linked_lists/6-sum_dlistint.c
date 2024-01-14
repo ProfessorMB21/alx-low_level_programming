@@ -20,6 +20,6 @@ int sum_dlistint(dlistint_t *head)
 		total += head->n;
 		head = head->next;
 	}
-	total += head->n; 	/* add data of last node to sum*/
+	total += head->n;	/* add data of last node to sum*/
 	return (total);
 }
